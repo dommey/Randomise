@@ -1,0 +1,27 @@
+﻿@model Randomise.Models.PlaceModel
+@{
+    ViewBag.Title = "Edit Details";
+}
+
+@using (Html.BeginForm())
+{
+    @ViewBag.Message
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(false)
+    @Html.HiddenFor(m => m.ID)
+
+    <div class="row">
+        <div class="col-md-4 formLabel">Name</div>
+        <div class="col-md-8 formInput">@Html.TextBoxFor(m => m.Name)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 formLabel">Address</div>
+        <div class="col-md-8 formInput">@Html.TextBoxFor(m => m.Address)</div>
+    </div>
+
+    <div class="row">
+        <input type="button" value="Cancel" class="btn btn-default" onclick="location.href='@Url.Action("Index", "Home/Index")'" />
+        <input type="submit" class="btn btn-default" value="Save" />
+    </div>
+}

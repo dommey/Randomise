@@ -1,0 +1,11 @@
+﻿@model Randomise.Models.EditModel
+@{
+    ViewBag.Title = "Edit";
+}
+
+<ul class="list-group">
+    @foreach (var placeModel in @Model.Places)
+    {
+        <li class="list-group-item"><a href="@Url.Action("EditDetails", "Home", new { id = @placeModel.ID })">@placeModel.Name</a></li>
+    }
+</ul>

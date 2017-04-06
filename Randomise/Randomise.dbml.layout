@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Randomise">
+  <DataContextMoniker Name="/RandomiseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9febe13f-31ed-45e1-b8e7-a49f1a6dd9d7" absoluteBounds="5.75, 4.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/RandomiseDataContext/Place" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be88cc14-8304-4762-a8cc-0ff26158d02c" absoluteBounds="5.765, 4.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
